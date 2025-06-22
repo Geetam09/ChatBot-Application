@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ask TinyLlama</title>
+  <link rel="stylesheet" href="script.css" />
+</head>
+<body class="dark">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>Ask TinyLlama</h2>
+      <button id="toggleTheme">🌙</button>
+    </div>
+    <ul id="history"></ul>
+    <div class="mode-toggle">
+      <button onclick="toggleTheme()">Light mode</button>
+    </div>
+  </aside>
+
+  <main class="chat-container">
+    <div id="chat" class="chat-box"></div>
+
+    <form id="chatForm" class="chat-form">
+      <input type="text" id="userInput" placeholder="Type a message..." required />
+      <button type="submit">➤</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
